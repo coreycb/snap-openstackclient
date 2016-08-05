@@ -1,0 +1,27 @@
+name: openstackclient
+version: "0"
+summary: Python3 OpenStack Client for Mitaka
+description: |
+    OpenStack Command-line Client for Python3
+
+    python-openstackclient is a unified command-line client for the OpenStack APIs.
+    It is a thin wrapper to the stock python-*client modules that implement the
+    actual REST API client actions.
+
+    This is an implementation of the design goals shown in
+    http://wiki.openstack.org/UnifiedCLI.  The primary goal is to provide
+    a unified shell command structure and a common language to describe
+    operations in OpenStack.
+
+    This package contains the Python 3.x module.Python3 OpenStack Client for Mitaka
+confinement: strict
+
+apps:
+  openstack:
+    command: usr/bin/openstack
+
+parts:
+  openstackclient:
+    plugin: python3
+    source: https://tarballs.openstack.org/python-openstackclient/python-openstackclient-stable-mitaka.tar.gz
+    constraints: https://raw.githubusercontent.com/openstack/requirements/stable/mitaka/upper-constraints.txt
