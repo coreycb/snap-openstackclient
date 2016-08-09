@@ -27,4 +27,3 @@ parts:
   openstackclient:
     plugin: python3
     source: https://tarballs.openstack.org/python-openstackclient/python-openstackclient-stable-mitaka.tar.gz
-    constraints: https://raw.githubusercontent.com/openstack/requirements/stable/mitaka/upper-constraints.txt
