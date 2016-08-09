@@ -19,6 +19,9 @@ confinement: strict
 apps:
   openstack:
     command: usr/bin/openstack
+    plugs:
+      - network
+      - home
 
 parts:
   openstackclient:
